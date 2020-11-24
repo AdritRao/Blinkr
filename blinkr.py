@@ -7,6 +7,7 @@ import cv2
 import sys
 import os
 
+## Blink count variable to count number of blinks
 blink_count = 0
 
 def speak(text: str):
@@ -34,6 +35,7 @@ dlib_facelandmark = dlib.shape_predictor("shape_predictor_68_face_landmarks.dat"
 
 start = time.time()
 
+## Timer while loop -- code will restart after time is up
 while time.time() - start < 60:
 
     _, frame = cam.read()
@@ -45,7 +47,7 @@ while time.time() - start < 60:
         face_landmarks = dlib_facelandmark(gray, face)
         leftEye = []
         rightEye = []
-
+        ## Left eye detection
         for n in range(36,42):
         	x = face_landmarks.part(n).x
         	y = face_landmarks.part(n).y
@@ -57,7 +59,7 @@ while time.time() - start < 60:
         	y2 = face_landmarks.part(next_point).y
         	cv2.line(frame,(x,y),(x2,y2),(0,255,0),1)
 
-
+        ## Right eye detection
         for n in range(42,48):
         	x = face_landmarks.part(n).x
         	y = face_landmarks.part(n).y
@@ -74,6 +76,7 @@ while time.time() - start < 60:
 
         EAR = (left_ear+right_ear)/2
         EAR = round(EAR,2)
+        ## Check Eye Aspect Ratio for blink
         if EAR < 0.26:
             cv2.putText(frame, "Blink", (20, 100), cv2.FONT_HERSHEY_SIMPLEX, 3, (255, 0, 0), 4)
             blink_count = blink_count + 1
@@ -85,7 +88,7 @@ while time.time() - start < 60:
     key = cv2.waitKey(1)
     if key == 'q':
         break
-
+## Check blink count after time is up
 else:
     if blink_count >= 10:
         print("Good, keep blinking")
