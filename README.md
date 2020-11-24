@@ -16,10 +16,13 @@ Blinkr is a device that utlizes [AI (Artifical Intellegence)](https://en.wikiped
 ## How does Blinkr work
 The Blinkr devices utlizes the [NVIDIA Jetson Nano AI Computer](https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/jetson-nano/). The NVIDIA Jetson Nano is a fast single board computer meant for AI. My code runs on this computer. Additionally Blinkr uses a camera, microphone, as well as screen.
 
+![ScreenShot](https://i.ibb.co/r6ZHpgQ/Are-tch-6.png)
+
 ## Make your own Blinkr
 Recreating your own Blinkr device is easy! Using the code repository and the instructions below you can make your own Blinkr and blink more. Follow the steps belowed carefully and you'll be on your way. Below is a picture of a research paper that explains how to detect blinks:
 
 ![ScreenShot](https://i.ibb.co/4RY4cRH/Screen-Shot-2020-11-23-at-5-35-36-PM.png)
+###### Real-Time Eye Blink Detection using Facial Landmarks-Tereza Soukupova and Jan Cech-Center for Machine Perception, Department of Cybernetics-Faculty of Electrical Engineering, Czech Technical University in Prague
 
 ***Here we cam see how the EAR (Eye Aspect Ratio) changes when someone blinks. Using this we can detect blinks.***
 
