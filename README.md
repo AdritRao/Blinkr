@@ -134,7 +134,7 @@ Every one minute the program will restart via this line of code.
 ## Final Step - Running the code on the Jetson Nano
 Download the code from this Repo and save it onto your Jetson Nano. Navigate to the LX Terminal and then to the folder. Then write this to see the code in action:
 ```
-  python3 main.py
+  python3 blinkr.py
 ```
 I hope you enjoy using Blinkr! 👁
 
