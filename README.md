@@ -40,6 +40,8 @@ Recreating your own Blinkr device is easy! Using the code repository and the ins
 
 6. [HDMI Cable](https://www.amazon.com/AmazonBasics-High-Speed-HDMI-Cable-1-Pack/dp/B014I8T0YQ/ref=sr_1_1_sspa?crid=20LGUYKA7TEIC&dchild=1&keywords=hdmi+cable+amazonbasics&qid=1606179113&sprefix=HDMI+Cable+amazon%2Caps%2C227&sr=8-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEzQTc5VDMxOFo0U0o3JmVuY3J5cHRlZElkPUEwNTIxMTExM0hGVURXN1ZaSzNHTyZlbmNyeXB0ZWRBZElkPUEwNzYzMTI2M0o3RFVOQ1NORVBJMCZ3aWRnZXROYW1lPXNwX2F0ZiZhY3Rpb249Y2xpY2tSZWRpcmVjdCZkb05vdExvZ0NsaWNrPXRydWU=) -- You will need a HDMI cable to connect a moniter/display to the Jetson Nano.
 
+7. [Speaker](https://www.amazon.com/HONKYOB-Speaker-Computer-Multimedia-Notebook/dp/B075M7FHM1/ref=sr_1_3?dchild=1&keywords=usb+mini+speaker&qid=1606240300&sr=8-3) -- You will need a USB Speaker for the audible blink reminder.
+
 ## Setting up the NVIDIA Jetson Nano 2GB Developer Kit
 Go to this link and follow the steps to get your NVIDIA Jetson Nano working. After following all of these steps and flashing the OS onto your Nano continue on below. 
 
@@ -66,21 +68,67 @@ To start installing packages via pip you will have to run this line in the LX Te
 ```python
   sudo apt-get install python3-pip
 ```
-Then install these packages via pip (note that to install dlib you will need to follow a tutorial):
+Then install these packages via pip (note that to install dlib and PyAudio you will need to follow a tutorial):
 ```python
   from scipy.spatial import distance
-  from time import *
-  import threading
-  import cv2
+  from gtts import gTTS
+  import playsound
+  import time
   import dlib
+  import cv2
+  import sys
+  import os
 ```
 
+## Time and Blink Count Modifications
+
+You can modify the time on line 37. Change the number on this line to change the seconds until the next reminder:
+
+```python
+  while time.time() - start < 60:
+```
+
+You can modify the number of blinks needed over here:
+
+```python
+   if blink_count >= 10:
+       print("Good, keep blinking")
+       blink_count = 0
+       os.execl(sys.executable, sys.executable, *sys.argv)
+   else:
+       speak("Blink more please")
+       blink_count = 0
+       os.execl(sys.executable, sys.executable, *sys.argv)
+```
+
+## Eye Line and Blink Color Modifications
+
+You can change the color of the line around the left and right eye by changing this line of code on lines 58 and 70:
+
+```python
+    cv2.line(frame,(x,y),(x2,y2),(0,255,0),1)
+```
+
+You can change the font color of "Blink" on line 78:
+
+```python
+    cv2.putText(frame, "Blink", (20, 100), cv2.FONT_HERSHEY_SIMPLEX, 3, (255, 0, 0), 4)
+```
+
+## Program Restart
+
+Every one minute the program will restart via this line of code.
+
+```python
+    os.execl(sys.executable, sys.executable, *sys.argv)
+```
 
 ## Final Step - Running the code on the Jetson Nano
 Download the code from this Repo and save it onto your Jetson Nano. Navigate to the LX Terminal and then to the folder. Then write this to see the code in action:
 ```
   python3 main.py
 ```
+I hope you enjoy using Blinkr! 👁
 
 
 
