@@ -14,7 +14,7 @@ Blinkr is a device that utlizes [AI (Artifical Intellegence)](https://en.wikiped
 ![ScreenShot](https://i.ibb.co/DCbsY5Z/Are-tch-5.png)
 
 ## How does Blinkr work
-The Blinkr devices utlizes the [NVIDIA Jetson Nano AI Computer](https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/jetson-nano/). The NVIDIA Jetson Nano is a fast single board computer meant for AI. My code runs on this computer. Additionally Blinkr uses a camera, microphone, as well as screen.
+The Blinkr devices utlizes the [NVIDIA Jetson Nano AI Computer](https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/jetson-nano/). The NVIDIA Jetson Nano is a fast single board computer meant for AI. My code runs on this computer. Additionally Blinkr uses a camera, speaker, as well as screen.
 
 ![ScreenShot](https://i.ibb.co/r6ZHpgQ/Are-tch-6.png)
 
