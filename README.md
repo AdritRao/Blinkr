@@ -9,7 +9,7 @@ As many studies show, while looking at a computer screen our blink rate reduces.
 ![ScreenShot](https://i.ibb.co/f2XzGk2/Are-tch-3.png)
 
 ## How Blinkr aims to solve this problem
-Blinkr is a device that utlizes [AI (Artifical Intellegence)](https://en.wikipedia.org/wiki/Artificial_intelligence) to detect blinks. Blinkr uses a camera that faces the user. Blinkr counts the number of times a user blinks and warns them if they are not blinking enough. An average adult blinks 15-20 times a minute. Blinkr looks at how much you are blinking per minute and informs you on weather you should blink or not.
+Blinkr is a device that utlizes [AI (Artifical Intellegence)](https://en.wikipedia.org/wiki/Artificial_intelligence) to detect blinks. Blinkr uses a camera that faces the user. Blinkr counts the number of times a user blinks and warns them if they are not blinking enough. An average adult blinks 15-20 times a minute. Blinkr looks at how much you are blinking per minute and informs you on whether you should blink or not.
 
 ![ScreenShot](https://i.ibb.co/DCbsY5Z/Are-tch-5.png)
 
@@ -43,7 +43,7 @@ Recreating your own Blinkr device is easy! Using the code repository and the ins
 7. [Speaker](https://www.amazon.com/HONKYOB-Speaker-Computer-Multimedia-Notebook/dp/B075M7FHM1/ref=sr_1_3?dchild=1&keywords=usb+mini+speaker&qid=1606240300&sr=8-3) -- You will need a USB Speaker for the audible blink reminder.
 
 ## Setting up the NVIDIA Jetson Nano 2GB Developer Kit
-Go to this link and follow the steps to get your NVIDIA Jetson Nano working. After following all of these steps and flashing the OS onto your Nano continue on below. 
+Go to this [link](https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/jetson-nano/education-projects/) and follow the steps to get your NVIDIA Jetson Nano working. After following all of these steps and flashing the OS onto your Nano continue on below.
 
 ## Connecting the Camera to the Jetson Nano
 
