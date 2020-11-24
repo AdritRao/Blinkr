@@ -64,6 +64,14 @@ Also add a height, width and flip variable above. I reccomend the width and heig
 
 ## Installing packages
 
+Before installing python packages you will need to download the "shape_predictor_68_face_landmarks.dat" file and modify this line with the path to the file:
+
+```python
+  dlib_facelandmark = dlib.shape_predictor("shape_predictor_68_face_landmarks.dat")
+```
+
+To download it visit this [link](http://dlib.net/files/shape_predictor_68_face_landmarks.dat.bz2).
+
 To start installing packages via pip you will have to run this line in the LX Terminal:
 ```python
   sudo apt-get install python3-pip
