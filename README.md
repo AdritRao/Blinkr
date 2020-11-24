@@ -9,7 +9,7 @@ As many studies show, while looking at a computer screen our blink rate reduces.
 ![ScreenShot](https://i.ibb.co/f2XzGk2/Are-tch-3.png)
 
 ## How Blinkr aims to solve this problem
-Blinkr is a device that utlizes [AI (Artifical Intellegence)](https://en.wikipedia.org/wiki/Artificial_intelligence) to detect blinks. Blinkr uses a camera that faces the user. Blinkr counts the number of times a user blinks and warns them if they are not blinking enough. An average adult blinks 15-20 times a minute. Blinkr looks at how much you are blinking per minute and informs you on whether you should blink or not.
+Blinkr is a device that utlizes [AI (Artifical Intellegence)](https://en.wikipedia.org/wiki/Artificial_intelligence) to detect blinks. Blinkr uses a camera that faces the user. Blinkr counts the number of times a user blinks and warns them if they are not blinking enough. An average adult blinks 10-20 times a minute. Blinkr looks at how much you are blinking per minute and informs you on whether you should blink or not.
 
 ![ScreenShot](https://i.ibb.co/DCbsY5Z/Are-tch-5.png)
 
