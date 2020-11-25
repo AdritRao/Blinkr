@@ -1,5 +1,5 @@
 # Blinkr
-Making sure you stay safe while on your computer
+Jetson Nano AI Blink Detection and Reminder Project
 
 ![ScreenShot](https://i.ibb.co/pQpCdX8/Are-tch-2.png)
 
