@@ -1,0 +1,5 @@
+gTTS==2.2.1
+scipy==1.5.4
+opencv_python==3.4.11.45
+playsound==1.2.2
+dlib==19.21.0
