@@ -88,7 +88,7 @@ These are the packages used in the Python script:
   import os
 ```
 
-You can download these packages via pip using the requirements.txt file:
+You can download these packages via pip using the [requirements.txt](https://github.com/AdritRao/Blinkr/blob/main/requirements.txt) file:
 ```python
   pip3 install -r requirements.txt
 ```
