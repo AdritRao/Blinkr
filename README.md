@@ -76,7 +76,7 @@ To start installing packages via pip you will have to run this line in the LX Te
 ```python
   sudo apt-get install python3-pip
 ```
-Then install these packages via pip (note that to install dlib and PyAudio you will need to follow a tutorial):
+These are the packages used in the Python script:
 ```python
   from scipy.spatial import distance
   from gtts import gTTS
@@ -86,6 +86,11 @@ Then install these packages via pip (note that to install dlib and PyAudio you w
   import cv2
   import sys
   import os
+```
+
+You can download these packages via pip using the requirements.txt file:
+```python
+  pip3 install -r requirements.txt
 ```
 
 ## Time and Blink Count Modifications
