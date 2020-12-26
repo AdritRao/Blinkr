@@ -1,3 +1,5 @@
+[![Awared](https://www.codetriage.com/vdaubry/github-awards/badges/users.svg)](https://www.codetriage.com/vdaubry/github-awards)
+
 # Blinkr
 Jetson Nano AI Blink Detection and Reminder Project ⭐️ Awared the Jetson AI Specialist Award ⭐️
 
