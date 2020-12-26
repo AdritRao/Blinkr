@@ -131,7 +131,7 @@ You can change the font color of "Blink" on line 78:
 
 ## Program Restart
 
-Every one minute the program will restart via this line of code.
+Every one minute the program will restart via this line of code:
 
 ```python
     os.execl(sys.executable, sys.executable, *sys.argv)
