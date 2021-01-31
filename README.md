@@ -1,5 +1,5 @@
 # Blinkr
-Jetson Nano AI Blink Detection and Reminder Project
+Jetson Nano AI Blink Detection and Reminder Project \n
 ⭐️ Winner of the NVIDIA Jetson AI Specialist Award and NVIDIA Project of the Month ⭐️
 
 ![ScreenShot](https://i.ibb.co/pQpCdX8/Are-tch-2.png)
