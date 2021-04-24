@@ -6,7 +6,6 @@ tags:
   - Blink Reminder
 authors:
   - name: Adrit Rao
-    orcid: 0000-0003-0872-7098
     affiliation: "1"
 affiliations:
  - name: Greene Middle School
